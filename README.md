@@ -1,28 +1,15 @@
 
 # Active Scanning with Honeypot Integration
-This project implements advanced active scanning techniques using the Scapy library in Python. It integrates SYN scan detection with honeypot functionality to identify and respond to unauthorized access attempts on specified ports.
+This project implements active scanning  using the Scapy library in Python. It integrates SYN scan detection with honeypot functionality to identify and respond to unauthorized access attempts on specified ports.
 
-# General Information
-Network reconnaissance can be performed using either active or passive methods. Active reconnaissance involves direct interaction with the target environment, such as performing port or vulnerability scans. Passive reconnaissance, on the other hand, may involve eavesdropping on traffic or using publicly available information sources.
-
-MITRE ATT&CK's Active Scanning technique is an example of active reconnaissance. It includes performing scans to determine active IP addresses, running services, existing vulnerabilities, and other relevant intelligence.
-
-Scapy Library
-Scapy is a powerful Python library used for crafting, sending, and receiving network packets. It is particularly useful for network scanning, tracerouting, probing, and other network-related tasks. The official home of Scapy is https://scapy.net.
-
-Project Description
+# Project Description
 This project aims to implement SYN scan detection and honeypot responses using the Scapy library in Python. The SYN scan detection monitors specified ports for SYN packets, which are indicative of port scanning attempts. The honeypot functionality responds to these scans, either resetting the connection for protected ports or acknowledging it for honeypot ports. This project demonstrates how to use Scapy to perform advanced network monitoring and active defense tasks.
-
-Features
-SYN Scan Detection: Monitors specified TCP ports for SYN packets, indicative of scanning attempts.
-
-Honeypot Integration: Responds to unauthorized access attempts with specific actions, such as resetting the connection or acknowledging the attempt.
-
-Customizable Port Lists: Allows specification of protected ports and honeypot ports.
-
-Interactive Input: Accepts target IP address and ports list input from the user.
-
-Error Handling: Validates IP address and ports input, handling invalid entries gracefully.
+# Features
+- <b>SYN Scan Detection: </b> Monitors specified TCP ports for SYN packets, indicative of scanning attempts.
+- <b>Honeypot Integration: </b> Responds to unauthorized access attempts with specific actions, such as resetting the connection or acknowledging the attempt.
+- <b>Customizable Port Lists: </b>Allows specification of protected ports and honeypot ports.
+- <b>Interactive Input: </b>Accepts target IP address and ports list input from the user.
+- <b>Error Handling: </b>Validates IP address and ports input, handling invalid entries gracefully.
 
 Interactions in the Code
 The code defines three lists of ports: ports for protected ports, honeys for honeypot ports, and blocked for sources that have attempted to access unauthorized ports. The analyzePackets function processes incoming packets to determine if they are SYN scans. Depending on the source and destination ports, it sends appropriate responses to either reset the connection or acknowledge the attempt.
