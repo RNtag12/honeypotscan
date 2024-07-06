@@ -39,4 +39,4 @@ def analyzePacekts(p):
         sendp(respone, verbose=False)
 
 f = "dst host "+ip+" and tcp"
-sniff(filter=f, prn=analyzePackets)
+sniff(filter=f, prn=analyzePackets) #this function is a scapy's function that is used to monitor network traffic. It monitors the traffic on an interface and tests it against a filter
