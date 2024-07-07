@@ -3,7 +3,7 @@
 This project implements active scanning  using the Scapy library in Python. It integrates SYN scan detection with honeypot functionality to identify and respond to unauthorized access attempts on specified ports.
 
 # Project Description
-This project aims to implement SYN scan detection and honeypot responses using the Scapy library in Python. The SYN scan detection monitors specified ports for SYN packets, which are indicative of port scanning attempts. The honeypot functionality responds to these scans, either resetting the connection for protected ports or acknowledging it for honeypot ports. This project demonstrates how to use Scapy to perform advanced network monitoring and active defense tasks.
+This project aims to implement SYN scan detection and honeypot responses using the Scapy library in Python. The SYN scan detection monitors specified ports for SYN packets, which are indicative of port scanning attempts. The honeypot functionality responds to these scans, either resetting the connection for protected ports or acknowledging it for honeypot ports. the goal of this project to build responses to mislead a port scanner and demonstrates how to use Scapy to perform advanced network monitoring and active defense tasks.
 # Features
 - <b>SYN Scan Detection: </b> Monitors specified TCP ports for SYN packets, indicative of scanning attempts.
 - <b>Honeypot Integration: </b> Responds to unauthorized access attempts with specific actions, such as resetting the connection or acknowledging the attempt.
