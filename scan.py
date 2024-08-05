@@ -7,7 +7,7 @@ ip = "172.168.0.1"
 #ports list is made of ports that are assumed to be running services which means that anyone
 #attempting to connect to a different port is potentially malicious and will be listed in blocked
 ports=[53,80] 
-honeyports =[8080,8443]
+honeyports =[8080,8443] 
 
 blocked = []
 
